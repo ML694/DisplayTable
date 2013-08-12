@@ -16,14 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<style type="text/css" media="all">
-      @import url("css/maven-base.css"); @import url("css/maven-theme.css"); @import url("css/site.css"); @import
-      url("css/screen.css");
-    </style>
-    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
-	
-	<link name="EasyGrid" rev="stylesheet" rel="stylesheet" type="text/css" href="EasyGrid.css">
-	<script src="EasyGrid.js"></script>
+
 	<script src="jquery-1.2.6.min.js"></script>
 	<script type="text/javascript" src="TableAutoYdcun.js"></script>
 	<link rel="stylesheet" type="text/css" href="TableAutoYdcun.css">
