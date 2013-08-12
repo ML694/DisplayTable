@@ -1,0 +1,58 @@
+
+/*重点：固定行头样式*/
+.scrollRowThead 
+{
+     position: relative; 
+     left: expression(this.parentElement.parentElement.parentElement.parentElement.scrollLeft);
+     z-index:0;
+}
+/*重点：固定表头样式*/
+.scrollColThead {
+     position: relative; 
+     top: expression(this.parentElement.parentElement.parentElement.scrollTop);
+     z-index:2;
+}
+/*行列交叉的地方*/
+.scrollCR {
+     z-index:3;
+} 
+/*div外框*/
+.scrollDiv {
+	height:90%;
+	clear: both; 
+	border: 1px solid #EEEEEE;
+	OVERFLOW: scroll;
+	width: 100%; 
+}
+/*行头居中*/
+.scrollColThead td,.scrollColThead th
+{
+     text-align: center ;
+} 
+/*行头列头背景*/
+.scrollRowThead,.scrollColThead td,.scrollColThead th
+{
+background-color:EEEEEE;
+}
+/*表格的线*/
+
+.scrollTable
+{
+border-bottom:1px solid #CCCCCC; 
+border-right:1px solid #CCCCCC;
+
+table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+
+}
+/*单元格的线等*/
+.scrollTable td,.scrollTable th
+{
+     border-left: 1px solid #CCCCCC; 
+     border-top: 1px solid #CCCCCC; 
+     padding: 5px; 
+     word-break:keep-all;/* 不换行 */
+	 white-space:nowrap; /*强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+	 overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+	 text-overflow:ellipsis;/* IE 专有属性，当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	 
+}	

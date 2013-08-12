@@ -1,0 +1,1 @@
+将displaytag-1.2-bin.zip中的displaytag-examples-1.2部署到tomcat中就可以看到所有的效果
